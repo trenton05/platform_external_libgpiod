@@ -90,3 +90,12 @@ cc_binary {
     local_include_dirs: ["include"],
     cflags: ["-Werror"],
 }
+
+cc_binary {
+    name: "spidev_test",
+    srcs: [
+        "src/tools/spidev_test.c",
+    ],
+    local_include_dirs: ["include"],
+    cflags: ["-Werror"],
+}
